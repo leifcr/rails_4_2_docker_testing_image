@@ -9,3 +9,12 @@
 ## Gems included
 
 See Gemfile
+
+## Docker hub:
+
+https://hub.docker.com/r/leifcr/rails_4_2_elasticsearch_mysql/
+
+```
+docker run -ti leifcr/rails_4_2_elasticsearch_mysql /bin/bash
+docker pull leifcr/rails_4_2_elasticsearch_mysql
+```
