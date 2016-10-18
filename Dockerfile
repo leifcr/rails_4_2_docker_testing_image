@@ -32,6 +32,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
   bzip2 \
   unzip \
   xz-utils \
+  memcached \
   openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" \
   ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" \
   elasticsearch
