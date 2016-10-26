@@ -183,19 +183,6 @@ gem 'paper_trail', '~> 4.1'
 # TODO: Change to this to include confirm method for rails.confirm ujs
 gem 'sweet-alert-confirm'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-slick-carousel'
-  gem 'rails-assets-jquery', '~> 2.2.4', require: false
-  gem 'rails-assets-sweetalert'
-  gem 'rails-assets-accounting.js'
-  gem 'rails-assets-animate.css'
-  gem 'rails-assets-select2'
-  gem 'rails-assets-select2-bootstrap-theme'
-  gem 'rails-assets-pnotify'
-  gem 'rails-assets-typeahead.js'
-  gem 'rails-assets-jquery.lazyload'
-end
-
 # Better lightboxes
 # For galleries, use magnific-popup in combination with slick slider
 # For single images, videos, logins etc, use magnific-popup
@@ -269,4 +256,17 @@ group :development do
   # Better ruby/rails console
   gem 'pry-rails'
   gem 'pry-toys'
+end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-slick-carousel'
+  gem 'rails-assets-jquery', '~> 2.2.4', require: false
+  gem 'rails-assets-sweetalert'
+  gem 'rails-assets-accounting.js'
+  gem 'rails-assets-animate.css'
+  gem 'rails-assets-select2'
+  gem 'rails-assets-select2-bootstrap-theme'
+  gem 'rails-assets-pnotify'
+  gem 'rails-assets-typeahead.js'
+  gem 'rails-assets-jquery.lazyload'
 end
