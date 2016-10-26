@@ -28,18 +28,18 @@ RUN apk add --no-cache \
   fontconfig \
   curl
 
-# grab gosu for easy step-down from root
-ENV GOSU_BASE https://github.com/tianon/gosu/releases/download
-ENV GOSU_VERSION 1.10
-RUN set -x \
-    && wget -O /usr/local/bin/gosu "$GOSU_BASE/$GOSU_VERSION/gosu-$(apk --print-arch |sed -e 's/x86_64/amd64/')" \
-    && wget -O /usr/local/bin/gosu.asc "$GOSU_BASE/$GOSU_VERSION/gosu-$(apk --print-arch |sed -e 's/x86_64/amd64/').asc" \
-    && export GNUPGHOME="$(mktemp -d)" \
-    && gpg2 --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
-    && gpg2 --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
-    && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
-    && chmod +x /usr/local/bin/gosu \
-    && gosu nobody true
+# # grab gosu for easy step-down from root
+# ENV GOSU_BASE https://github.com/tianon/gosu/releases/download
+# ENV GOSU_VERSION 1.10
+# RUN set -x \
+#     && wget -O /usr/local/bin/gosu "$GOSU_BASE/$GOSU_VERSION/gosu-$(apk --print-arch |sed -e 's/x86_64/amd64/')" \
+#     && wget -O /usr/local/bin/gosu.asc "$GOSU_BASE/$GOSU_VERSION/gosu-$(apk --print-arch |sed -e 's/x86_64/amd64/').asc" \
+#     && export GNUPGHOME="$(mktemp -d)" \
+#     && gpg2 --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
+#     && gpg2 --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \
+#     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
+#     && chmod +x /usr/local/bin/gosu \
+#     && gosu nobody true
 
 ENV ELASTICSEARCH_VERSION 2.4.1
 ENV ELASTICSEARCH_DOWNLOAD https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch
