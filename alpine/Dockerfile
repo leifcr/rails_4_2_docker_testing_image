@@ -64,7 +64,7 @@ RUN set -ex \
         chown -R elasticsearch:elasticsearch "$path"; \
     done
 
-COPY elasticsearch-config /opt/elasticsearch/config
+COPY elasticsearch-config-alpine /opt/elasticsearch/config
 
 RUN set -x \
   && /usr/bin/mysql_install_db --user=mysql \
@@ -91,7 +91,7 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 # Add Gemfile
-COPY ../Gemfile ../Gemfile.lock ./
+COPY Gemfile Gemfile.lock ./
 # Install gems
 RUN gem install bundler && bundle install --jobs 20 --retry 5
 
