@@ -64,7 +64,7 @@ RUN set -ex \
         chown -R elasticsearch:elasticsearch "$path"; \
     done
 
-COPY elasticsearch-config-alpine /opt/elasticsearch/config
+COPY elasticsearch-config /opt/elasticsearch/config
 
 RUN set -x \
   && /usr/bin/mysql_install_db --user=mysql \
