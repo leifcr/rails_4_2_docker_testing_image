@@ -403,16 +403,11 @@ GEM
       sprockets-rails
     rails-assets-accounting.js (0.4.1)
     rails-assets-animate.css (3.5.2)
-    rails-assets-bootstrap (3.3.7)
-      rails-assets-jquery (>= 1.9.1, < 4)
     rails-assets-jquery (2.2.4)
     rails-assets-jquery.lazyload (1.9.7)
     rails-assets-pnotify (3.0.0)
       rails-assets-jquery (>= 1.6)
     rails-assets-select2 (4.0.3)
-    rails-assets-select2-bootstrap-theme (0.1.0.beta.9)
-      rails-assets-bootstrap (>= 3.3.4, < 4)
-      rails-assets-select2 (>= 4.0.0, < 5)
     rails-assets-slick-carousel (1.6.0)
       rails-assets-jquery (>= 1.7)
     rails-assets-sweetalert (1.1.3)
@@ -660,7 +655,6 @@ DEPENDENCIES
   rails-assets-jquery.lazyload!
   rails-assets-pnotify!
   rails-assets-select2!
-  rails-assets-select2-bootstrap-theme!
   rails-assets-slick-carousel!
   rails-assets-sweetalert!
   rails-assets-typeahead.js!

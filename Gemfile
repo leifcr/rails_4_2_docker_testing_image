@@ -265,7 +265,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-accounting.js'
   gem 'rails-assets-animate.css'
   gem 'rails-assets-select2'
-  gem 'rails-assets-select2-bootstrap-theme'
   gem 'rails-assets-pnotify'
   gem 'rails-assets-typeahead.js'
   gem 'rails-assets-jquery.lazyload'
