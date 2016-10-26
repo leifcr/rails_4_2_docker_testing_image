@@ -13,6 +13,7 @@ RUN apk update && apk upgrade
 
 # When newer alpine is released (3.5 or 3.6), change imagemagick to graphicsmagick
 RUN apk add --no-cache \
+  bash \
   sqlite-dev \
   build-base \
   tzdata \
