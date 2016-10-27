@@ -21,7 +21,6 @@ RUN apk add --no-cache \
   db-dev \
   file \
   fontconfig \
-  geoip-dev \
   git \
   glib-dev \
   gnupg \
@@ -61,8 +60,7 @@ RUN mkdir -p /usr/share && \
 # Set rails:rails as user on app and ssh-agent folder
 RUN mkdir $APP_HOME && \
     mkdir /ssh-agent && \
-    groupadd -g 1000 rails && \
-    useradd -s /bin/bash -m -d /home/rails -g rails rails && \
+    adduser -h /home/rails -g rails -s /bin/bash -D rails && \
     chown rails:rails /app && \
     chown rails:rails /ssh-agent
 
