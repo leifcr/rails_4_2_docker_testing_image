@@ -52,7 +52,7 @@ RUN apk add --no-cache \
   xz \
   xz-dev \
   yaml-dev \
-  zlib-dev \
+  zlib-dev
 
 # # grab gosu for easy step-down from root
 # ENV GOSU_BASE https://github.com/tianon/gosu/releases/download
