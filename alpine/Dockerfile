@@ -16,7 +16,6 @@ RUN apk add --no-cache \
   build-base \
   bzip2 \
   bzip2-dev \
-  ca-certificates \
   curl \
   curl-dev \
   db-dev \
@@ -38,11 +37,10 @@ RUN apk add --no-cache \
   linux-headers \
   mariadb-client \
   mariadb-dev \
-  memcached \
   ncurses-dev \
   nodejs \
   openssl \
-  opnessl-dev \
+  openssl-dev \
   readline-dev \
   sqlite-dev \
   tzdata \

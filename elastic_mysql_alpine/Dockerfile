@@ -15,24 +15,45 @@ RUN apk update && apk upgrade
 # When newer alpine is released (3.5 or 3.6), change imagemagick to graphicsmagick
 RUN apk add --no-cache \
   bash \
-  sqlite-dev \
   build-base \
-  tzdata \
-  openjdk8-jre \
-  openssl \
+  bzip2 \
+  bzip2-dev \
+  ca-certificates \
+  curl \
+  curl-dev \
+  db-dev \
+  file \
+  fontconfig \
+  geoip-dev \
+  git \
+  glib-dev \
   gnupg \
+  imagemagick \
+  imagemagick-dev \
+  jpeg-dev \
+  libevent-dev \
+  libffi-dev \
+  libpng-dev \
+  libtool \
+  libxml2-dev \
+  libxslt-dev \
+  linux-headers \
   mariadb \
   mariadb-client \
   mariadb-dev \
-  imagemagick \
-  libxml2-dev \
-  libxslt-dev \
-  nodejs \
-  ca-certificates \
   memcached \
-  fontconfig \
-  git \
-  curl
+  ncurses-dev \
+  nodejs \
+  openjdk8-jre \
+  openssl \
+  openssl-dev \
+  readline-dev \
+  sqlite-dev \
+  tzdata \
+  xz \
+  xz-dev \
+  yaml-dev \
+  zlib-dev \
 
 # # grab gosu for easy step-down from root
 # ENV GOSU_BASE https://github.com/tianon/gosu/releases/download
