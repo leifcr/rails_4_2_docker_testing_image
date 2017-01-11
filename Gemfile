@@ -76,8 +76,6 @@ gem 'secure_headers'
 # Can be removed if webpack is used instead
 gem 'uglifier', '>= 1.3.0'
 gem 'execjs' # uglifier requirement
-# Use nodejs/iojs in prod env
-# Use therubyracer in development/test
 # gem 'mini_racer'
 gem 'therubyracer' # , group: [:development] # execjs/uglifier requirement
 
