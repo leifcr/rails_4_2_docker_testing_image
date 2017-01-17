@@ -40,7 +40,6 @@ gem 'font-awesome-sass', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
-gem 'modernizr-rails', '~> 2.7.1'
 
 gem 'mini_magick'
 
@@ -266,4 +265,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-pnotify'
   gem 'rails-assets-typeahead.js'
   gem 'rails-assets-jquery.lazyload'
+  gem 'rails-assets-js-cookie'
+  # gem 'rails-assets-modernizr'
 end
