@@ -285,6 +285,8 @@ GEM
       activesupport (>= 3.0.0)
     launchy (2.4.3)
       addressable (~> 2.3)
+    leifcr-rack-livereload (0.3.17)
+      rack
     leifcr-refile-fog (0.2.0)
       fog-core (~> 1.42)
       fog-json
@@ -382,9 +384,7 @@ GEM
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
-    rack (1.6.4)
-    rack-livereload (0.3.16)
-      rack
+    rack (1.6.5)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
@@ -626,6 +626,7 @@ DEPENDENCIES
   jquery-ui-rails
   jquery.fileupload-rails
   kaminari
+  leifcr-rack-livereload
   leifcr-refile-fog
   magnific-popup-rails
   mini_magick
@@ -646,7 +647,6 @@ DEPENDENCIES
   puma
   pundit
   quiet_assets
-  rack-livereload
   rails (~> 4.2.7)
   rails-assets-accounting.js!
   rails-assets-animate.css!
