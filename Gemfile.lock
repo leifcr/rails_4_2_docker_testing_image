@@ -285,7 +285,7 @@ GEM
       activesupport (>= 3.0.0)
     launchy (2.4.3)
       addressable (~> 2.3)
-    leifcr-rack-livereload (0.3.17)
+    leifcr-rack-livereload (0.3.19)
       rack
     leifcr-refile-fog (0.2.0)
       fog-core (~> 1.42)

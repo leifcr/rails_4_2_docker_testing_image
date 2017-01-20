@@ -235,7 +235,7 @@ group :development do
 
   # For reloading during devel
   gem 'guard-livereload', require: false
-  gem 'rack-livereload'
+  gem 'leifcr-rack-livereload', require: 'rack-livereload'
   gem 'guard-rspec', require: false
 
   # Cannot use guard-bundler on Windows, because of symlink issue.
