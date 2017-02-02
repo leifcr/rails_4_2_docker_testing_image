@@ -266,5 +266,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-typeahead.js'
   gem 'rails-assets-jquery.lazyload'
   gem 'rails-assets-js-cookie'
+  gem 'rails-assets-underscore'
   # gem 'rails-assets-modernizr'
 end
