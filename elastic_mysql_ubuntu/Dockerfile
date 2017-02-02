@@ -104,9 +104,10 @@ ENV APP_HOME /app
 
 # BEGIN APP/RAILS SETUP
 
+# Phantomjs installation
+ENV PHANTOMJS_VERSION 2.1.1
 # Bitbucket dl (usually has issues)
 # Install phantomjs for testing purposes (only used on guard), but easier to add to docker base image
-# ENV PHANTOMJS_VERSION 2.1.1
 # Install official PhantomJS release
 # RUN set -x  \
 #  && mkdir /tmp/phantomjs \
@@ -119,7 +120,7 @@ ENV APP_HOME /app
 RUN set -x  \
  && mkdir /tmp/phantomjs \
  && cd /tmp/phantomjs \
- && wget -nv https://github.com/paladox/phantomjs/releases/download/2.1.7/phantomjs-2.1.1-linux-x86_64.tar.bz2 -O - \
+ && wget -nv https://github.com/Medium/phantomjs/releases/download/v$PHANTOMJS_VERSION/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -O - \
    | tar -xj --strip-components=1 -C /tmp/phantomjs \
  && mv /tmp/phantomjs/bin/phantomjs /usr/local/bin
 

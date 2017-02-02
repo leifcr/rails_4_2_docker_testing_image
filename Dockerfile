@@ -17,9 +17,10 @@ ENV APP_HOME /app
 # If encoding errors occur, adjust locale.
 ENV LANG C.UTF-8
 
-# Install phantomjs for testing purposes (used on testing), but included in this development image
+# Phantomjs installation
+ENV PHANTOMJS_VERSION 2.1.1
 # Bitbucket dl (usually has issues)
-# ENV PHANTOMJS_VERSION 2.1.1
+# Install phantomjs for testing purposes (only used on guard), but easier to add to docker base image
 # Install official PhantomJS release
 # RUN set -x  \
 #  && mkdir /tmp/phantomjs \
@@ -32,7 +33,7 @@ ENV LANG C.UTF-8
 RUN set -x  \
  && mkdir /tmp/phantomjs \
  && cd /tmp/phantomjs \
- && wget -nv https://github.com/paladox/phantomjs/releases/download/2.1.7/phantomjs-2.1.1-linux-x86_64.tar.bz2 -O - \
+ && wget -nv https://github.com/Medium/phantomjs/releases/download/v$PHANTOMJS_VERSION/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -O - \
    | tar -xj --strip-components=1 -C /tmp/phantomjs \
  && mv /tmp/phantomjs/bin/phantomjs /usr/local/bin
 
