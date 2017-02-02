@@ -2,8 +2,8 @@ FROM ruby:2.3
 MAINTAINER leifcr@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV JAVA_VERSION 8u111
-ENV JAVA_DEBIAN_VERSION 8u111-b14-2~bpo8+1
+ENV JAVA_VERSION 8u121
+ENV JAVA_DEBIAN_VERSION 8u121-b13-1~bpo8+1
 # see https://bugs.debian.org/775775
 # and https://github.com/docker-library/java/issues/19#issuecomment-70546872
 ENV CA_CERTIFICATES_JAVA_VERSION 20140324
