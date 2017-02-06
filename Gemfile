@@ -116,7 +116,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'capybara-screenshot'
+  gem 'leifcr-capybara-screenshot'
   gem 'database_cleaner'
   gem 'factory_girl_rails', require: false # , group: [:test]
   gem 'shoulda-matchers'
