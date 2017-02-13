@@ -207,6 +207,8 @@ gem 'routing-filter'
 # For truncating html
 gem 'truncate_html'
 
+gem 'slack-ruby-client'
+
 group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -253,8 +255,6 @@ group :development do
   # Better ruby/rails console
   gem 'pry-rails'
   gem 'pry-toys'
-
-  gem 'slack-ruby-client'
 end
 
 source 'https://rails-assets.org' do
