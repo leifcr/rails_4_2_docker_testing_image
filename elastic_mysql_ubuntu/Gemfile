@@ -253,6 +253,8 @@ group :development do
   # Better ruby/rails console
   gem 'pry-rails'
   gem 'pry-toys'
+
+  gem 'slack-ruby-client'
 end
 
 source 'https://rails-assets.org' do
