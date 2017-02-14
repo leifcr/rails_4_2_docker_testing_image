@@ -165,12 +165,12 @@ gem 'facets', require: false
 # For validating email addresses
 gem 'valid_email2'
 
-# Edtior alternatives
+# Editor alternatives
 # gem 'medium-editor-rails'
 # Redactor editor (tested, not good results, but OK)
 # Froala editor should be ok...?
-# Keep at 2.0.2 until tested with 2.2
-gem 'wysiwyg-rails' # , '2.0.2'
+# Lock on 2.3.3 for now
+gem 'wysiwyg-rails', '2.3.3' # , '2.0.2'
 gem 'codemirror-rails'
 
 # For publish/draft/versining, paper_trail is used
