@@ -240,6 +240,10 @@ group :development do
   gem 'leifcr-rack-livereload', require: 'rack-livereload'
   gem 'guard-rspec', require: false
 
+  # Due to issue with rails 4.2 + newer thor, lock to 0.19.1
+  # See: http://stackoverflow.com/questions/40881938/new-ruby-on-rails-setup-expected-string-default-value-for-rc-got-false
+  gem 'thor', '0.19.1'
+
   # Cannot use guard-bundler on Windows, because of symlink issue.
   # gem 'guard-bundler', require: false
   # Cannot use guard-foreman on Windows, because of symlink issue.
