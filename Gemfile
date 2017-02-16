@@ -81,11 +81,12 @@ gem 'therubyracer' # , group: [:development] # execjs/uglifier requirement
 # Error Tracking
 gem 'sentry-raven'
 
-# Profiler
-gem 'skylight', group: [:staging, :production]
-
-# Use puma as the web server
-gem 'puma'
+group :staging, :production do
+  # Profiler
+  gem 'skylight'
+  # Use puma as the web server in production
+  gem 'puma'
+end
 
 gem 'delayed_job'
 gem 'delayed_job_active_record'
@@ -112,6 +113,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5' # , group: [:development, :test]
   # gem 'rspec-collection_matchers'
   gem 'faker'
+  gem 'thin'
 end
 
 group :test do
@@ -224,6 +226,8 @@ group :development do
   gem 'capistrano-delayed_job', require: false
   gem 'capistrano-db-tasks', require: false, git: 'https://github.com/leifcr/capistrano-db-tasks.git', tag: 'v0.4.1'
 
+  # Note, remove binding_of_caller and/or better_errors if debugging is slow
+  # See https://github.com/charliesome/better_errors/issues/341
   gem 'binding_of_caller'
   gem 'better_errors'
 
