@@ -15,6 +15,7 @@ gem 'rails-i18n'
 # kaminair must be before elasticsearch to work with es
 gem 'kaminari'
 
+gem 'elasticsearch', '~> 2.0' # Keep at 2.0.x until servers are updated
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
 gem 'elasticsearch-dsl'

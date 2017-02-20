@@ -155,18 +155,18 @@ GEM
     diff-lcs (1.2.5)
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
-    elasticsearch (2.0.0)
-      elasticsearch-api (= 2.0.0)
-      elasticsearch-transport (= 2.0.0)
-    elasticsearch-api (2.0.0)
+    elasticsearch (2.0.1)
+      elasticsearch-api (= 2.0.1)
+      elasticsearch-transport (= 2.0.1)
+    elasticsearch-api (2.0.1)
       multi_json
-    elasticsearch-dsl (0.1.4)
+    elasticsearch-dsl (0.1.5)
     elasticsearch-model (0.1.9)
       activesupport (> 3)
       elasticsearch (> 0.4)
       hashie
     elasticsearch-rails (0.1.9)
-    elasticsearch-transport (2.0.0)
+    elasticsearch-transport (2.0.1)
       faraday
       multi_json
     em-websocket (0.5.1)
@@ -629,6 +629,7 @@ DEPENDENCIES
   delayed_paperclip
   devise
   devise-i18n
+  elasticsearch (~> 2.0)
   elasticsearch-dsl
   elasticsearch-model
   elasticsearch-rails
