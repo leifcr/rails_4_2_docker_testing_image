@@ -125,7 +125,7 @@ group :test do
   gem 'timecop'
 
   # Retry if phantomjs just blows up...
-  # gem 'rspec-retry'
+  gem 'rspec-retry'
 
   # js drivers for capybara
   # Use phantomjs through poltergeist

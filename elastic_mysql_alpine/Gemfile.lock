@@ -489,6 +489,8 @@ GEM
       rspec-expectations (~> 3.5.0)
       rspec-mocks (~> 3.5.0)
       rspec-support (~> 3.5.0)
+    rspec-retry (0.5.3)
+      rspec-core (> 3.3, < 3.6)
     rspec-support (3.5.0)
     ruby-progressbar (1.8.1)
     ruby_dep (1.5.0)
@@ -694,6 +696,7 @@ DEPENDENCIES
   responders
   routing-filter
   rspec-rails (~> 3.5)
+  rspec-retry
   ruby-progressbar
   ruby_gntp
   sass-rails (~> 5.0)
