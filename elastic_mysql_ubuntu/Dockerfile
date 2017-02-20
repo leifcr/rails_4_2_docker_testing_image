@@ -8,7 +8,7 @@ ENV JAVA_DEBIAN_VERSION 8u121-b13-1~bpo8+1
 # and https://github.com/docker-library/java/issues/19#issuecomment-70546872
 ENV CA_CERTIFICATES_JAVA_VERSION 20161107~bpo8+1
 
-ENV ELASTICSEARCH_VERSION 2.4.1
+ENV ELASTICSEARCH_VERSION 2.4.2
 ARG ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/2.x/debian
 
 ARG MYSQL_ROOT_PASSWORD=root

@@ -1,7 +1,7 @@
 FROM ruby:2.3-alpine
 MAINTAINER leifcr@gmail.com
 
-ENV ELASTICSEARCH_VERSION 2.4.1
+ENV ELASTICSEARCH_VERSION 2.4.2
 ENV APP_HOME /app
 ARG MYSQL_ROOT_PASSWORD=root
 
@@ -67,7 +67,7 @@ RUN apk add --no-cache \
 #     && chmod +x /usr/local/bin/gosu \
 #     && gosu nobody true
 
-ENV ELASTICSEARCH_VERSION 2.4.1
+ENV ELASTICSEARCH_VERSION 2.4.2
 ENV ELASTICSEARCH_DOWNLOAD https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch
 RUN mkdir -p /opt && adduser -h /opt/elasticsearch -g elasticsearch -s /bin/bash -D elasticsearch
 
