@@ -217,6 +217,8 @@ group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
 
+  gem 'i18n-tasks' # To check for missing/unused translations
+
   #  gem 'rails-dev-tweaks', '~> 0.5.1'
 
   # Use Capistrano for deployment
