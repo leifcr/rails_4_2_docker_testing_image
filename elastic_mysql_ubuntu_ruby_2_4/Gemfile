@@ -177,7 +177,7 @@ gem 'wysiwyg-rails', '2.3.3' # , '2.0.2'
 gem 'codemirror-rails'
 
 # For publish/draft/versining, paper_trail is used
-gem 'paper_trail', '~> 4.1'
+gem 'paper_trail'
 
 # Prettier alerts
 # TODO: Change to this to include confirm method for rails.confirm ujs
