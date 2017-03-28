@@ -531,7 +531,7 @@ GEM
     shellany (0.0.1)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
-    simple_form (3.2.1)
+    simple_form (3.4.0)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
     sinatra (1.4.8)
@@ -730,7 +730,7 @@ DEPENDENCIES
   secure_headers
   sentry-raven
   shoulda-matchers
-  simple_form (~> 3.2.0)
+  simple_form (~> 3.4.0)
   skylight
   slack-ruby-client
   spring

@@ -8,7 +8,7 @@ gem 'sprockets-es6', require: 'sprockets/es6'
 gem 'responders' # See https://github.com/plataformatec/responders
 
 gem 'turbolinks', '~> 2.5'
-gem 'jquery-turbolinks'
+gem 'jquery-turbolinks' # rubocop:disable Bundler/OrderedGems jquery-turbolinks must be after turbolinks
 
 gem 'rails-i18n'
 
@@ -17,8 +17,8 @@ gem 'kaminari'
 
 gem 'elasticsearch', '~> 2.0' # Keep at 2.0.x until servers are updated
 gem 'elasticsearch-rails'
-gem 'elasticsearch-model'
-gem 'elasticsearch-dsl'
+gem 'elasticsearch-model' # rubocop:disable Bundler/OrderedGems
+gem 'elasticsearch-dsl' # rubocop:disable Bundler/OrderedGems
 
 # Nice progressbar to use in rake tasks
 gem 'ruby-progressbar', require: false
@@ -37,17 +37,17 @@ gem 'jquery-ui-rails'
 
 gem 'jquery.fileupload-rails'
 
-gem 'font-awesome-sass', '~> 4.3'
-gem 'bootstrap-sass', '~> 3.3'
-gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'
+gem 'bootstrap-sass', '~> 3.3'
+gem 'font-awesome-sass', '~> 4.3'
+gem 'sass-rails', '~> 5.0'
 
 gem 'mini_magick'
 
 gem 'fog-rackspace'
 gem 'refile', require: 'refile/rails'
 gem 'refile-mini_magick'
-gem 'leifcr-refile-fog'
+gem 'leifcr-refile-fog' # rubocop:disable Bundler/OrderedGems
 
 gem 'paperclip'
 # gem 'paperclip-optimizer', '~> 2.0.0'
@@ -75,7 +75,8 @@ gem 'secure_headers'
 # Asset precompilation
 # Can be removed if webpack is used instead
 gem 'uglifier', '>= 1.3.0'
-gem 'execjs' # uglifier requirement
+# uglifier requirement
+gem 'execjs'
 # gem 'mini_racer'
 gem 'therubyracer' # , group: [:development] # execjs/uglifier requirement
 
@@ -93,17 +94,17 @@ gem 'delayed_job'
 gem 'delayed_job_active_record'
 
 # Forms
-gem 'simple_form', '~> 3.2.0'
-gem 'country_select'
-gem 'countries'
+gem 'simple_form', '~> 3.4.0'
+gem 'country_select' # rubocop:disable Bundler/OrderedGems - countries must be after country_select
+gem 'countries' # rubocop:disable Bundler/OrderedGems
 
 # Authentication
 gem 'devise'
 gem 'devise-i18n'
 
 gem 'omniauth'
-gem 'omniauth-github'
 gem 'omniauth-facebook'
+gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin-oauth2'
 
@@ -119,9 +120,9 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'leifcr-capybara-screenshot'
   gem 'database_cleaner'
   gem 'factory_girl_rails', require: false # , group: [:test]
+  gem 'leifcr-capybara-screenshot'
   gem 'shoulda-matchers'
   gem 'timecop'
 
@@ -174,6 +175,7 @@ gem 'valid_email2'
 # Froala editor should be ok...?
 # Lock on 2.3.3 for now
 gem 'wysiwyg-rails', '2.3.3' # , '2.0.2'
+
 gem 'codemirror-rails'
 
 # For publish/draft/versining, paper_trail is used
@@ -199,8 +201,8 @@ gem 'dalli'
 gem 'connection_pool'
 
 # Use Faraday for requests?
-gem 'faraday' # do http requests over tons of adapters...
 gem 'excon'   # for using excon faraday adapter
+gem 'faraday' # do http requests over tons of adapters...
 
 gem 'enumerize'
 
@@ -223,16 +225,16 @@ group :development do
 
   # Use Capistrano for deployment
   gem 'capistrano', require: false
-  gem 'capistrano-rails', require: false
+  gem 'capistrano-db-tasks', require: false, git: 'https://github.com/leifcr/capistrano-db-tasks.git', tag: 'v0.4.1'
+  gem 'capistrano-delayed_job', require: false
   gem 'capistrano-monit_runit', require: false
   gem 'capistrano-pumaio', require: false
-  gem 'capistrano-delayed_job', require: false
-  gem 'capistrano-db-tasks', require: false, git: 'https://github.com/leifcr/capistrano-db-tasks.git', tag: 'v0.4.1'
+  gem 'capistrano-rails', require: false
 
   # Note, remove binding_of_caller and/or better_errors if debugging is slow
   # See https://github.com/charliesome/better_errors/issues/341
-  gem 'binding_of_caller'
   gem 'better_errors'
+  gem 'binding_of_caller'
 
   gem 'quiet_assets'
 
@@ -244,8 +246,8 @@ group :development do
 
   # For reloading during devel
   gem 'guard-livereload', require: false
-  gem 'leifcr-rack-livereload', require: 'rack-livereload'
   gem 'guard-rspec', require: false
+  gem 'leifcr-rack-livereload', require: 'rack-livereload'
 
   # Due to issue with rails 4.2 + newer thor, lock to 0.19.1
   # See: http://stackoverflow.com/questions/40881938/new-ruby-on-rails-setup-expected-string-default-value-for-rc-got-false
@@ -269,16 +271,16 @@ group :development do
 end
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-slick-carousel'
-  gem 'rails-assets-jquery', '~> 2.2.4', require: false
-  gem 'rails-assets-sweetalert'
   gem 'rails-assets-accounting.js'
   gem 'rails-assets-animate.css'
-  gem 'rails-assets-select2'
-  gem 'rails-assets-pnotify'
-  gem 'rails-assets-typeahead.js'
+  gem 'rails-assets-jquery', '~> 2.2.4', require: false
   gem 'rails-assets-jquery.lazyload'
   gem 'rails-assets-js-cookie'
+  gem 'rails-assets-pnotify'
+  gem 'rails-assets-select2'
+  gem 'rails-assets-slick-carousel'
+  gem 'rails-assets-sweetalert'
+  gem 'rails-assets-typeahead.js'
   gem 'rails-assets-underscore'
   # gem 'rails-assets-modernizr'
 end
