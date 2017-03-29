@@ -27,6 +27,7 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
   libxslt1-dev \
   mysql-client \
   graphicsmagick \
+  imagemagick \
   wget \
   nodejs \
   mysql-server \
