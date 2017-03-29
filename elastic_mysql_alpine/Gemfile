@@ -48,7 +48,7 @@ gem 'fog-rackspace'
 gem 'refile', require: 'refile/rails'
 # gem 'refile-mini_magick'
 gem 'leifcr-refile-fog'
-gem 'leifcr-refile-mini_magick', require: 'refile-mini_magick'
+gem 'leifcr-refile-mini_magick', require: 'refile/mini_magick'
 
 gem 'paperclip'
 # gem 'paperclip-optimizer', '~> 2.0.0'
