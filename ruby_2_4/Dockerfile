@@ -7,8 +7,6 @@ RUN apt-get update -qq && apt-get install -y \
   libxml2-dev \
   libxslt1-dev \
   mysql-client \
-  graphicsmagick \
-  imagemagick \
   wget \
   nodejs
 
