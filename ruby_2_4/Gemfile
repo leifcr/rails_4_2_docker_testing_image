@@ -170,12 +170,8 @@ gem 'facets', require: false
 # For validating email addresses
 gem 'valid_email2'
 
-# Editor alternatives
-# gem 'medium-editor-rails'
-# Redactor editor (tested, not good results, but OK)
-# Froala editor should be ok...?
-# Lock on 2.3.3 for now
-gem 'wysiwyg-rails', '2.3.3' # , '2.0.2'
+# Froala editor
+gem 'wysiwyg-rails', '2.5.1' # , '2.3.3'
 
 gem 'codemirror-rails'
 
@@ -277,6 +273,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', '~> 2.2.4', require: false
   gem 'rails-assets-jquery.lazyload'
   gem 'rails-assets-js-cookie'
+  gem 'rails-assets-loadcss'
   gem 'rails-assets-pnotify'
   gem 'rails-assets-select2'
   gem 'rails-assets-slick-carousel'
