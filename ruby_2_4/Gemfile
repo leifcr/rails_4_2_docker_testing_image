@@ -16,8 +16,8 @@ gem 'rails-i18n'
 gem 'kaminari'
 
 gem 'elasticsearch', '~> 2.0' # Keep at 2.0.x until servers are updated
-gem 'elasticsearch-rails'
-gem 'elasticsearch-model' # rubocop:disable Bundler/OrderedGems
+gem 'elasticsearch-rails', '~> 2.0' # Keep at 2.0.x until servers are updated
+gem 'elasticsearch-model', '~> 2.0' # Keep at 2.0.x until servers are updated # rubocop:disable Bundler/OrderedGems
 gem 'elasticsearch-dsl' # rubocop:disable Bundler/OrderedGems
 
 # Nice progressbar to use in rake tasks
@@ -39,7 +39,7 @@ gem 'jquery.fileupload-rails'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
-gem 'font-awesome-sass', '~> 4.3'
+# gem 'font-awesome-sass', '~> 4.3'
 gem 'sass-rails', '~> 5.0'
 
 gem 'mini_magick'
@@ -113,7 +113,7 @@ gem 'omniauth-linkedin-oauth2'
 gem 'pundit'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.5' # , group: [:development, :test]
+  gem 'rspec-rails', '~> 3.6' # , group: [:development, :test]
   # gem 'rspec-collection_matchers'
   gem 'faker'
   gem 'thin'
