@@ -1,5 +1,9 @@
 # Docker image for testing rails 4.2 apps
 
+## Not maintained!
+
+This is no longer maintained, move along to rails 5 or 6...
+
 ## Included the following built in services
 
 * mysql 5.5
